@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Brafé</title>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <a href="" class="logo"><img src="imgs/brafe.png" alt=""></a>
+      <ul class="menu">
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Portifólio</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+      <div class="mm">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="mm-menu">
+    <a href="#">Sobre</a>
+    <a href="#">Produtos</a>
+    <a href="#">Portifólio</a>
+    <a href="#">Contato</a>
+  </div>
+  <main class="banner">
+    <div class="container">
+      <div class="banner-info">
+        <h1>Cafés com a cara do Brasil</h1>
+        <p>Direto das fazendas de Minas Gerais</p>
+      </div>
+    </div>
+  </main>
+
+  <section class="container sobre">
+    <h2>Uma Mistura de </h2>
+    <article>
+      <img src="imgs/cafe-1.jpg" alt="xicara de cafe 1">
+      <span class="cafe-info">Amor</span>
+    </article>
+    <article>
+      <img src="imgs/cafe-2.jpg" alt="xicara de cafe 2">
+      <span class="cafe-info">Perfeição</span>
+    </article>
+    <p>O café é uma bebida produzida a partir dos grãos torrados do fruto do cafeeiro. É servido tradicionalmaente quente, mas também pode ser consumido gelado. Ele é um estimulante, por possuir cafeína — geralmente 80 a 140 mg para cada 207 ml dependendo do método de preparação.</p>
+  </section>
+
+  <section class="produtos">
+    <div class="container">
+      <div class="produtos-content">
+        <div class="produto">
+          <h2 class="paulista">Paulista</h2>
+          <p>As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo noutras regiões: o João Alberto Castelo Branco trouxe mudas do Pará.</p>
+        </div>
+        <div class="produto">
+          <h2 class="carioca">Carioca</h2>
+          <p>As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo noutras regiões: o João Alberto Castelo Branco trouxe mudas do Pará.</p>
+        </div>
+        <div class="produto">
+          <h2 class="mineiro">Mineiro</h2>
+          <p>As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo noutras regiões: o João Alberto Castelo Branco trouxe mudas do Pará.</p>
+        </div>
+        <button class="btn-produto">Saiba Mais</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container locais">
+    <div class="local">
+      <img src="imgs/botafogo.jpg" alt="Santos">
+      <article>
+        <h2>Santos</h2>
+        <p>As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>
+        <button class="btn-local">Ver Mapa</button>
+      </article>
+    </div>
+    <div class="local">
+      <img src="imgs/Iguatemi.jpg" alt="Santos">
+      <article>
+        <h2>Vola Madalena</h2>
+        <p>As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>
+        <button class="btn-local">Ver Mapa</button>
+      </article>
+    </div>
+    <div class="local">
+      <img src="imgs/mineirao.jpg" alt="Santos">
+      <article>
+        <h2>Tatuapé</h2>
+        <p>As condições climáticas não eram as melhores nessa primeira escolha e, entre 1800 e 1850, tentou-se o cultivo.</p>
+        <button class="btn-local">Ver Mapa</button>
+      </article>
+    </div>
+  </section>
+
+  <section class="assine">
+    <div class="container">
+      <div class="assine-content">
+        <div class="assine-content-text">
+          <h2>Assine Nossa Newsletter</h2>
+          <span>Promoções e eventos mensais</span>
+        </div>
+        <div class="form">
+          <input type="email" name="" id="" placeholder="Digite seu email">
+          <button type="submit">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <span> &copy; Todos os direitos Reservados.</span>
+    </div>
+  </footer>
+
+  <script>
+    const mm = document.querySelector('.mm')
+    const handleClick = () => {
+      const mmActive = document.querySelector('.mm-menu')
+      mmActive.classList.toggle('active');
+    }
+    mm.addEventListener('click', handleClick)
+  </script>
+</body>
+
+</html>
